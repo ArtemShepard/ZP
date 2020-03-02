@@ -19,7 +19,7 @@ namespace ZP
         }
 
         SqlConnection conn = new SqlConnection("Data Source = 303-13; Initial Catalog = Practica_3; Integrated Security=true;");//
-
+        //
         private void Form1_Load(object sender, EventArgs e)
         {
 
