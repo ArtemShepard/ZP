@@ -22,6 +22,31 @@ namespace ZP
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            conn.Open();
+
+            SqlCommand com = new SqlCommand($"SELECT id FROM grade", conn);
+            SqlDataReader dr = com.ExecuteReader();
+            while (dr.Read()) {
+                comboBox1.Items.Add(dr[0]);
+            }
+           
+            
+            conn.Close();
+            dr.Close();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
